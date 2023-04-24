@@ -27,7 +27,7 @@
           >
           <ul class="naw-list list">
             <li class="naw-item">
-              <a href="./index.html" class="naw-link link">Studio</a>
+              <a href="./index.html" class="naw-link current link">Studio</a>
             </li>
             <li class="naw-item">
               <a href="./portfolio.html" class="naw-link link">Portfolio</a>
@@ -58,7 +58,9 @@
       <section class="hero">
         <div class="hero-conteiner container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -528,5 +530,16 @@
         </div>
       </div>
     </footer>
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
